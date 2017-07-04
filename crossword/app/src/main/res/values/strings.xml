@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">crossword</string>
+    <string name="title_activity_help">HelpActivity</string>
+    <string name="title_activity_error_message">errorMessage</string>
+    <string name="title_activity_error_display">ErrorDisplay</string>
+</resources>

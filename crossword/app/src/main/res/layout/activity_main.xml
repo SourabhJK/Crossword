@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.felight.crossword.MainActivity"
+    android:gravity="center"
+    android:background="@drawable/back6">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvHintDisplay"
+        android:textSize="10dp"
+        android:textColor="@android:color/white"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Across"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textColor="@android:color/white"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Down"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/lvHints"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/llStart">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnStart"
+            android:textSize="10dp"
+            android:text="Start"
+            android:layout_margin="2dp"
+            android:onClick="timeCalculation"
+            android:layout_weight="1"
+            android:background="@drawable/buttonbackground"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnHint"
+            android:layout_margin="2dp"
+            android:textSize="10dp"
+            android:text="Hint"
+            android:layout_weight="1"
+            android:background="@drawable/buttonbackground"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnSubmit"
+            android:layout_margin="2dp"
+            android:onClick="timeCalculation"
+            android:textSize="10dp"
+            android:text="Submit"
+            android:layout_weight="1"
+            android:background="@drawable/buttonbackground"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnHelp"
+            android:layout_margin="2dp"
+            android:onClick="timeCalculation"
+            android:textSize="10dp"
+            android:text="Help"
+            android:layout_weight="1"
+            android:background="@drawable/buttonbackground"
+            android:textColor="@android:color/white"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/llMain"
+                android:gravity="center">
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+
+    </ScrollView>
+
+
+
+
+
+</LinearLayout>
